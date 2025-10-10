@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body bgcolor="black" text="white">
+    <br><br><br><br>
+    <form action="index1.html" method="get">
+        <table border="2" cellpadding="10" cellspacing="0" align="center" bgcolor="#222222">
+            <tr>
+                <td colspan="4" align="center">
+                    <font size="5"><b>Registration Form</b></font>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Student</b></td>
+                <td><input type="text" placeholder="First Name" required></td>
+                <td><input type="text" placeholder="Middle Name" required></td>
+                <td><input type="text" placeholder="Last Name" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Father Name</b></td>
+                <td><input type="text" placeholder="Father Name" required></td>
+                <td><b>Mother Name</b></td>
+                <td><input type="text" placeholder="Mother Name" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Date of Birth</b></td>
+                <td><input type="date" required></td>
+                <td><b>Gender</b></td>
+                <td>
+                    <label for="f1">Male</label>
+                    <input id="f1" type="radio" name="gender" value="male" required>
+                    <label for="f2">Female</label>
+                    <input id="f2" type="radio" name="gender" value="female" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>City</b></td>
+                <td>
+                    <select required>
+                        <option value="">--Select City--</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                    </select>
+                </td>
+                <td><b>Signature</b></td>
+                <td><input type="file" accept="image/*" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
