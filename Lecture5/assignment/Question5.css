@@ -1,0 +1,90 @@
+/* Question5.css - Pricing Section using Flexbox */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Pricing using flexbox */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  flex: 1;
+  max-width: 300px;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+}
+
+.popular {
+  background-color: #3498db;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.plan h3 {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan li {
+  margin-bottom: 0.5rem;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive: stack vertically below 750px */
+@media (max-width: 750px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    max-width: 100%;
+  }
+}
