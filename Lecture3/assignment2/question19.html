@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Form</title>
+  </head>
+  <body>
+    <!-- Form with autocomplete="off", required fields, and security note -->
+    <h1>Secure Form</h1>
+    <form action="#" method="post" autocomplete="off">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Note: Autocomplete is disabled for security reasons.</p>
+  </body>
+</html>
