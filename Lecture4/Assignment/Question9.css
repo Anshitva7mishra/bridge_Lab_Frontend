@@ -1,0 +1,49 @@
+/* Question9.css - Newspaper Column Structure */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: justify; /* Justify text */
+}
+
+/* Article with columns */
+article {
+  column-count: 3; /* Three vertical columns */
+  column-gap: 2rem; /* Gap between columns */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading spans all columns */
+article h1 {
+  column-span: all; /* Span across all columns */
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+article p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Floating image */
+.float-left {
+  float: left; /* Align image to the left */
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 150px;
+}

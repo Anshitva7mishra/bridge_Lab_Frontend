@@ -1,0 +1,186 @@
+/* Question10.css - Complete Webpage Layout */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header with sticky navigation */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+/* Hero section */
+#hero {
+  background-image: url("https://picsum.photos/1200/600?random=9");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+/* About section with two columns */
+#about {
+  padding: 4rem 2rem;
+  background-color: #ecf0f1;
+}
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  margin-bottom: 1rem;
+}
+
+#about img {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Services section with three boxes */
+#services {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+#services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section */
+#contact {
+  padding: 4rem 2rem;
+  background-color: #34495e;
+  color: #fff;
+}
+
+#contact .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 2rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact label {
+  text-align: left;
+  font-weight: bold;
+}
+
+#contact input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 0.8rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #about .container,
+  .services-grid {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
