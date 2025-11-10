@@ -1,4 +1,4 @@
-/* Box Model Exploration Styles */
+/* Box-Sizing Comparison */
 
 body {
   font-family: Arial, sans-serif;
@@ -30,47 +30,39 @@ main {
   margin-top: 80px;
 }
 
-.demo {
+.comparison {
   display: flex;
   gap: 50px;
+  align-items: flex-start;
 }
 
 .box {
   width: 200px;
-  height: 150px;
-  background-color: #fff;
-  border: 10px solid #007bff;
   padding: 20px;
-  margin: 30px;
-  position: relative;
-}
-
-.box p {
-  background-color: #28a745;
-  color: white;
-  margin: 0;
-  padding: 10px;
+  border: 10px solid #007bff;
+  background-color: #fff;
   text-align: center;
-  font-weight: bold;
-}
-
-.box span {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.9em;
-  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .default {
   box-sizing: content-box;
-  outline: 2px dashed #dc3545; /* Margin visualization */
+  background-color: #ffeaa7;
 }
 
 .border-box {
   box-sizing: border-box;
-  outline: 2px dashed #dc3545; /* Margin visualization */
+  background-color: #a29bfe;
+}
+
+.box p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.box span {
+  font-size: 0.9em;
+  color: #666;
 }
 
 footer {
@@ -81,4 +73,11 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .comparison {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
