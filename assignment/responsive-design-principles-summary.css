@@ -1,0 +1,64 @@
+/* Responsive Design Principles Summary CSS */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Principles grid layout */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.principle {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.principle:hover {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: white;
+}
+
+.principle h2 {
+  margin-bottom: 10px;
+}
+
+.principle p {
+  margin-bottom: 10px;
+}
+
+.principle code {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  display: block;
+  font-family: monospace;
+  border-radius: 3px;
+}
+
+/* Responsive: single column below 600px */
+@media (max-width: 600px) {
+  .principles {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,75 @@
+/* Responsive CSS Cheat Sheet CSS */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cheat sheet grid layout */
+.cheat-sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.topic {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.topic:hover {
+  transform: scale(1.05);
+}
+
+.topic h2 {
+  margin-bottom: 10px;
+}
+
+.topic p {
+  margin-bottom: 10px;
+}
+
+.topic code {
+  background-color: #eee;
+  padding: 5px;
+  display: block;
+  font-family: monospace;
+}
+
+/* Responsive: stacked rows below 700px */
+@media (max-width: 700px) {
+  .cheat-sheet {
+    grid-template-columns: 1fr;
+  }
+  .topic {
+    display: flex;
+    flex-direction: column;
+  }
+  .topic h2 {
+    order: 1;
+  }
+  .topic p {
+    order: 2;
+  }
+  .topic code {
+    order: 3;
+  }
+}
