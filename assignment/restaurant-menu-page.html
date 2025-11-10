@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu Page</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="restaurant-menu-page.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Today's Menu</h1>
+
+      <!-- Menu table -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grilled Chicken</td>
+            <td>Main Course</td>
+            <td>$15.99</td>
+          </tr>
+          <tr>
+            <td>Caesar Salad</td>
+            <td>Appetizer</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Chocolate Cake</td>
+            <td>Dessert</td>
+            <td>$6.99</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Chef's Specials -->
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3>Chef's Specials</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Lobster Bisque</li>
+            <li class="list-group-item">Filet Mignon</li>
+            <li class="list-group-item">Tiramisu</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://via.placeholder.com/400x300?text=Food+Image"
+            class="img-fluid"
+            alt="Food Image"
+          />
+          <p class="text-center mt-2">Delicious homemade pasta</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
