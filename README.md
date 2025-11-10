@@ -139,6 +139,7 @@ Build a **Fully Responsive Webpage** using:
 
 ---
 ## 📁 Repository Structure  
+```
 /lectures
 ├── lecture1-introduction.md
 ├── lecture2-html-basics.md
@@ -150,7 +151,7 @@ Build a **Fully Responsive Webpage** using:
 
 /projects
 └── final-responsive-website
-
+```
 ---
 
 ### 💡 Note  
